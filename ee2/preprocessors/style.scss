@@ -1,5 +1,4 @@
-$body-bg-color: #ffeeec;
-$header-title-color: #55125e;
+@import '_variables';
 
 * {
 	// outline: 1px solid black;
@@ -16,6 +15,7 @@ body {
 }
 
 .sda-navbar {
+	background-color: $header-bg-color;
 	ul {
 		display: flex;
 		list-style-type: none;
@@ -28,8 +28,12 @@ body {
 				font-family: Arial, Helvetica, sans-serif;
 				font-size: 24px;
 				color: $header-title-color;
+				text-decoration: none;
+				border-bottom: 2px solid $header-title-color;
+				transition: padding 0.2s;
 
 				&:hover {
+					padding-bottom: 4px;
 				}
 			}
 		}
