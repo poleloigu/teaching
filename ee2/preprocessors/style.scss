@@ -1,9 +1,59 @@
 @import '_variables';
+@import '_mixins';
 
 * {
 	// outline: 1px solid black;
 	margin: 0;
 	padding: 0;
+}
+.short-note {
+	@include ellipsis(400px, 50px);
+}
+.sda-input {
+	@include placeholder {
+		font-weight: bold;
+		color: red;
+	}
+}
+
+.sda-button {
+	border: 1px solid red;
+	padding: 5px 10px;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+.sda-button-submit {
+	@extend .sda-button;
+	background-color: gray;
+	border: 1px solid green;
+	color: blue;
+}
+.sda-button-disabled {
+	@extend .sda-button;
+	background-image: url('https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/aguel56s3kqc0khlrmjc');
+	background-size: cover;
+	background-position: 50% 50%;
+	width: 100px;
+	height: 40px;
+	transition: filter 2s;
+	animation: pulse 10s infinite;
+
+	&:hover {
+		filter: invert(0.8);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		filter: hue-rotate(360deg);
+	}
+	100% {
+		filter: hue-rotate(0deg);
+	}
 }
 
 body {

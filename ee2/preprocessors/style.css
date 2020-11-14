@@ -2,6 +2,79 @@
   margin: 0;
   padding: 0; }
 
+.short-note {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 400px;
+  height: 50px;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.sda-input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: red; }
+
+.sda-input:-ms-input-placeholder {
+  font-weight: bold;
+  color: red; }
+
+.sda-input::-ms-input-placeholder {
+  font-weight: bold;
+  color: red; }
+
+.sda-input::placeholder {
+  font-weight: bold;
+  color: red; }
+
+.sda-button, .sda-button-submit, .sda-button-disabled {
+  border: 1px solid red;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer; }
+
+.sda-button-submit {
+  background-color: gray;
+  border: 1px solid green;
+  color: blue; }
+
+.sda-button-disabled {
+  background-image: url("https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/aguel56s3kqc0khlrmjc");
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100px;
+  height: 40px;
+  -webkit-transition: -webkit-filter 2s;
+  transition: -webkit-filter 2s;
+  transition: filter 2s;
+  transition: filter 2s, -webkit-filter 2s;
+  -webkit-animation: pulse 10s infinite;
+          animation: pulse 10s infinite; }
+  .sda-button-disabled:hover {
+    -webkit-filter: invert(0.8);
+            filter: invert(0.8); }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg); }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg); }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg); } }
+
+@keyframes pulse {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg); }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg); }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg); } }
 body {
   background-color: #ffeeec; }
 
