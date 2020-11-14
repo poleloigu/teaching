@@ -10,3 +10,6 @@ This is just some testing text.
 - Can I use (https://caniuse.com/)
 - CSS Combinators (https://www.w3schools.com/css/css_combinators.asp)
 - CSS Pseudo elements (https://www.w3schools.com/css/css_pseudo_elements.asp)
+- CSS Calc (https://www.w3schools.com/cssref/func_calc.asp)
+- BEM (http://getbem.com/introduction/)
+- !important & specificy (https://www.w3schools.com/css/css_specificity.asp)
