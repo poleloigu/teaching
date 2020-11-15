@@ -18,3 +18,10 @@
 .btn-secondary {
 	background-color: black;
 }
+.btn-rightside {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 15px;
+	z-index: 1;
+}
