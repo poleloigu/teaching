@@ -13,3 +13,8 @@
 .x * {
 	outline: 1px solid gray;
 }
+
+/* Overwriting bootstrap css */
+.btn-secondary {
+	background-color: black;
+}
